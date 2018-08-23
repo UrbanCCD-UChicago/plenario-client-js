@@ -9,6 +9,11 @@
   "private": false,
   "devDependencies": {
     "eslint": "^5.4.0",
+    "mocha": "^5.2.0",
     "yarn": "^1.9.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
   }
 }
