@@ -1,0 +1,22 @@
+{
+  "name": "plenario-client",
+  "version": "1.0.0",
+  "description": "Official JavaScript client for the Plenario V2 API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UrbanCCD-UChicago/plenario-client-js.git"
+  },
+  "keywords": [
+    "Plenario"
+  ],
+  "author": "UChicago Urban CCD",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/UrbanCCD-UChicago/plenario-client-js/issues"
+  },
+  "homepage": "https://github.com/UrbanCCD-UChicago/plenario-client-js#readme"
+}
