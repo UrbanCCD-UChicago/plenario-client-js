@@ -1,9 +1,14 @@
 const assert = require("assert");
+const Client = require("..").Client;
 
-describe("Array", () => {
-  describe("#indexOf()", () => {
-    it("should return -1 when the value is not present", () => {
-      assert.equal([1, 2].indexOf(3), -1);
+describe("Client", () => {
+
+  this.client = new Client();
+
+  describe("#describeDataSets()", () => {
+    it("should return return a JSON payload from the server", () => {
+      var res = this.client.getDataSets();
+      assert(res).equals({});
     });
   });
 });
