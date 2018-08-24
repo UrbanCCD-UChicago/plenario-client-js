@@ -1,13 +1,12 @@
-const assert = require("assert");
-const Client = require("..").Client;
+import { Client } from '../lib';
 
-describe("Client", () => {
+describe('Client', () => {
 
-  this.client = new Client();
+  let client = new Client();
 
-  describe("#describeDataSets()", () => {
-    it("should return return a JSON payload from the server", () => {
-      var res = this.client.getDataSets();
+  describe('#describeDataSets()', () => {
+    it('should return return a JSON payload from the server', () => {
+      var res = client.getDataSets();
       assert(res).equals({});
     });
   });
