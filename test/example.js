@@ -2,7 +2,7 @@ import { Client } from '../lib';
 
 describe('Client', () => {
 
-  let client = new Client();
+  let client = new Client('localhost');
 
   describe('#describeDataSets()', () => {
     it('should return return a JSON payload from the server', () => {

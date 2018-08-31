@@ -21,5 +21,8 @@
     "test": "mocha --require babel-polyfill --require babel-register",
     "lint": "eslint .",
     "build": "babel lib --out-dir dist"
+  },
+  "dependencies": {
+    "node-fetch": "^2.2.0"
   }
 }
