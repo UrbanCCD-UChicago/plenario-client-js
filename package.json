@@ -13,14 +13,15 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
     "eslint": "^5.4.0",
+    "fetch-mock": "^7.0.0-alpha.6",
     "mocha": "^5.2.0",
     "yarn": "^1.9.4"
   },
   "scripts": {
     "test": "mocha --require babel-polyfill --require babel-register",
-    "lint": "eslint .",
-    "build": "babel lib --out-dir dist"
+    "lint": "eslint ."
   },
   "dependencies": {
     "node-fetch": "^2.2.0"

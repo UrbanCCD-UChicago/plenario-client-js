@@ -1,6 +1,9 @@
 # PROJECT LOAL
 dist
 
+# ide stuff
+.idea
+
 # Logs
 logs
 *.log
