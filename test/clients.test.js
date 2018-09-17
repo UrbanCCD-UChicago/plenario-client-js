@@ -48,7 +48,7 @@ describe('Client', () => {
       expect(res.meta).to.be.an('object');
     });
 
-    it('should have a body array', async () => {
+    it('should have a data array', async () => {
       let res = await client.describeDataSets();
       expect(res).to.have.property('data');
       expect(res.data).to.be.an('array');
@@ -77,15 +77,40 @@ describe('Client', () => {
   describe('#headDataSetDescriptions', () => {
     before(() => {
       // you'll want to change this
-      let body = fs.readFileSync('test/fixtures/list.json');
+      let body = fs.readFileSync('test/fixtures/detail-head.json');
       fetchMock.get('*', JSON.parse(body));
     });
 
-    it('should return a JSON response', async () => { });
-    it('should have a meta object', async () => { });
-    it('should have a body array', async () => { });
-    it('should not have values for previous or next links', async () => { });
-    it('should only have one object in its data array', async () => { });
+    it('should return a JSON response', async () => {
+      let res = await client.headDataSetDescriptions();
+      expect(res).to.be.an('object');
+    });
+    it('should have a meta object', async () => {
+      let res = await client.headDataSetDescriptions();
+      expect(res).to.have.property('meta');
+      expect(res.meta).to.be.an('object');
+    });
+    it('should have a data array', async () => {
+      let res = await client.headDataSetDescriptions();
+      expect(res).to.have.property('data');
+      expect(res.data).to.be.an('array');
+    });
+    it('should not have values for previous or next links', async () => {
+      let res = await client.headDataSetDescriptions();
+      expect(res).to.have.property('meta');
+      expect(res.meta).to.be.an('object');
+      let prev = res.meta.links.previous;
+      let next = res.meta.links.next;
+      expect(prev).to.equal(null);
+      expect(next).to.equal(null);
+    });
+    it('should only have one object in its data array', async () => {
+      let res = await client.headDataSetDescriptions();
+      expect(res).to.be.an('object');
+      expect(res.data).to.be.an('array');
+      let lenData = res.data.length;
+      expect(lenData).to.equal(1);
+    });
 
     after(() => fetchMock.restore());
   });
@@ -97,9 +122,20 @@ describe('Client', () => {
       fetchMock.get('*', JSON.parse(body));
     });
 
-    it('should return a JSON response', async () => { });
-    it('should have a meta object', async () => { });
-    it('should have a body array', async () => { });
+    it('should return a JSON response', async () => {
+      let res = await client.getDataSet('dataset-slug');
+      expect(res).to.be.an('object');
+    });
+    it('should have a meta object', async () => {
+      let res = await client.getDataSet('dataset-slug');
+      expect(res).to.be.an('object');
+      expect(res.meta).to.be.an('object');
+    });
+    it('should have a data array', async () => {
+      let res = await client.getDataSet('dataset-slug');
+      expect(res).to.be.an('object');
+      expect(res.data).to.be.an('array');
+    });
     it('should have the same keys in each element of the data array', async () => { });
 
     after(() => fetchMock.restore());
@@ -108,15 +144,40 @@ describe('Client', () => {
   describe('#headDataSet', () => {
     before(() => {
       // you'll want to change this
-      let body = fs.readFileSync('test/fixtures/list.json');
+      let body = fs.readFileSync('test/fixtures/list-head.json');
       fetchMock.get('*', JSON.parse(body));
     });
 
-    it('should return a JSON response', async () => { });
-    it('should have a meta object', async () => { });
-    it('should have a body array', async () => { });
-    it('should not have values for previous or next links', async () => { });
-    it('should only have one object in its data array', async () => { });
+    it('should return a JSON response', async () => {
+      let res = await client.headDataSet();
+      expect(res).to.be.an('object');
+    });
+    it('should have a meta object', async () => {
+      let res = await client.headDataSet();
+      expect(res).to.be.an('object');
+      expect(res.meta).to.be.an('object');
+    });
+    it('should have a data array', async () => {
+      let res = await client.headDataSet();
+      expect(res).to.be.an('object');
+      expect(res.data).to.be.an('array');
+    });
+    it('should not have values for previous or next links', async () => {
+      let res = await client.headDataSet();
+      expect(res).to.have.property('meta');
+      expect(res.meta).to.be.an('object');
+      let prev = res.meta.links.previous;
+      let next = res.meta.links.next;
+      expect(prev).to.equal(null);
+      expect(next).to.equal(null);
+    });
+    it('should only have one object in its data array', async () => {
+      let res = await client.headDataSet();
+      expect(res).to.be.an('object');
+      expect(res.data).to.be.an('array');
+      let lenData = res.data.length;
+      expect(lenData).to.equal(1);
+    });
 
     after(() => fetchMock.restore());
   });
@@ -124,16 +185,38 @@ describe('Client', () => {
   describe('#describeDataSet', () => {
     before(() => {
       // you'll want to change this
-      let body = fs.readFileSync('test/fixtures/list.json');
+      let body = fs.readFileSync('test/fixtures/detail-describe.json');
       fetchMock.get('*', JSON.parse(body));
     });
 
-    it('should return a JSON response', async () => { });
-    it('should have a meta object', async () => { });
-    it('should have a body array', async () => { });
-    it('should not have values for previous or next links', async () => { });
-    it('should only have one object in its data array', async () => { });
-    it('should have metadata keys, not record keys, in the array element', async () => { });
+    it('should return a JSON response', async () => {
+      let res = await client.describeDataSet('dataset-slug');
+      expect(res).to.be.an('object');
+    });
+    it('should have a meta object', async () => {
+      let res = await client.describeDataSet('dataset-slug');
+      expect(res.meta).to.be.an('object');
+    });
+    it('should have a data object, not array', async () => {
+      let res = await client.describeDataSet('dataset-slug');
+      expect(res).to.be.an('object');
+      expect(res.data).to.be.an('object');
+    });
+    it('should not have values for previous or next links', async () => {
+      let res = await client.describeDataSet('dataset-slug');
+      expect(res).to.have.property('meta');
+      expect(res.meta).to.be.an('object');
+      let prev = res.meta.links.previous;
+      let next = res.meta.links.next;
+      expect(prev).to.equal(null);
+      expect(next).to.equal(null);
+    });
+    it('should only have one object in its data array', async () => {
+
+    });
+    it('should have metadata keys, not record keys, in the array element', async () => {
+
+    });
 
     after(() => fetchMock.restore());
   });
