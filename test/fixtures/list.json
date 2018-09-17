@@ -1,1 +1,521 @@
-{"meta":{"params":{"page_size":2,"page":1,"order_by":{"asc":"name"},"format":"json"},"links":{"previous":null,"next":"https://dev.plenar.io/api/v2/data-sets?format=json&order_by=asc%3Aname&page=2&page_size=2","current":"https://dev.plenar.io/api/v2/data-sets?format=json&order_by=asc%3Aname&page=1&page_size=2"},"counts":{"total_records":21,"total_pages":11,"data_count":2}},"data":[{"virtual_points":[{"name":"vpf_5DRYegEC_NT_iGjz","lon_field":"Longitude","loc_field":null,"lat_field":"Latitude"}],"virtual_dates":[],"user":{"name":"Vince Forgione","email":"vforgione@uchicago.edu","bio":"Lead Engineer with UChicago's Urban CCD"},"time_range":{"upper_inclusive":true,"upper":"2018-09-02T00:00:00","lower_inclusive":true,"lower":"2001-04-06T00:00:00"},"source_url":"https://data.cityofchicago.org/api/views/3c9v-pnva/rows.csv?accessType=DOWNLOAD","slug":"chicago-311-service-requests-abandoned-vehicles","refresh_starts_on":"2018-01-01","refresh_rate":"days","refresh_interval":1,"refresh_ends_on":null,"next_import":"2018-09-04T16:22:00.052382Z","name":"Chicago 311 Service Requests - Abandoned Vehicles","latest_import":"2018-09-03T16:23:56.479615Z","hull":{"srid":4326,"coordinates":[[[-87.59790105526804,41.64449686770894],[-87.61687832306058,41.646613538710284],[-87.73364414382424,41.68362214209755],[-87.80068018439076,41.77401460088747],[-87.90988575382057,41.97262643515582],[-87.91372610600482,42.0085515808592],[-87.81647347886509,42.018657199281265],[-87.81394629882729,42.018909937520945],[-87.67664723812041,42.02266026807753],[-87.67124453546828,42.02263086215985],[-87.66591409672404,42.02253964688932],[-87.66410930179256,42.019394750569774],[-87.63665142867681,41.963209064832824],[-87.54070423685593,41.74834162748173],[-87.52617357053239,41.709478919734515],[-87.52468278255836,41.70112777354623],[-87.52471659671593,41.69191185515244],[-87.52749194531424,41.651701289708825],[-87.53517194041248,41.64905093200004],[-87.54327006101778,41.64625799447537],[-87.55917000812315,41.644729828400294],[-87.59790105526804,41.64449686770894]]]},"first_import":"2018-08-02T16:22:00.042468Z","fields":[{"type":"integer","name":"Community Area","description":null},{"type":"timestamp","name":"Completion Date","description":null},{"type":"timestamp","name":"Creation Date","description":null},{"type":"text","name":"Current Activity","description":null},{"type":"integer","name":"How Many Days Has the Vehicle Been Reported as Parked?","description":null},{"type":"float","name":"Latitude","description":null},{"type":"text","name":"License Plate","description":null},{"type":"text","name":"Location","description":null},{"type":"float","name":"Longitude","description":null},{"type":"text","name":"Most Recent Action","description":null},{"type":"integer","name":"Police District","description":null},{"type":"text","name":"SSA","description":null},{"type":"text","name":"Service Request Number","description":null},{"type":"text","name":"Status","description":null},{"type":"text","name":"Street Address","description":null},{"type":"text","name":"Type of Service Request","description":null},{"type":"text","name":"Vehicle Color","description":null},{"type":"text","name":"Vehicle Make/Model","description":null},{"type":"integer","name":"Ward","description":null},{"type":"float","name":"X Coordinate","description":null},{"type":"float","name":"Y Coordinate","description":null},{"type":"integer","name":"ZIP Code","description":null}],"description":null,"bbox":{"srid":4326,"coordinates":[[[-87.91372610600482,41.64449686770894],[-87.91372610600482,42.02266026807753],[-87.52468278255836,42.02266026807753],[-87.52468278255836,41.64449686770894],[-87.91372610600482,41.64449686770894]]]},"attribution":"City of Chicago"},{"virtual_points":[{"name":"vpf_oollOpDa3Qe-nBjt","lon_field":"Longitude","loc_field":null,"lat_field":"Latitude"}],"virtual_dates":[],"user":{"name":"Vince Forgione","email":"vforgione@uchicago.edu","bio":"Lead Engineer with UChicago's Urban CCD"},"time_range":{"upper_inclusive":true,"upper":"2018-09-03T00:00:00","lower_inclusive":true,"lower":"1995-01-17T00:00:00"},"source_url":"https://data.cityofchicago.org/api/views/t28b-ys7j/rows.csv?accessType=DOWNLOAD","slug":"chicago-311-service-requests-alley-lights-out","refresh_starts_on":"2018-01-01","refresh_rate":"days","refresh_interval":1,"refresh_ends_on":null,"next_import":"2018-09-04T16:26:00.070462Z","name":"Chicago 311 Service Requests - Alley Lights Out","latest_import":"2018-09-03T16:28:00.713957Z","hull":{"srid":4326,"coordinates":[[[-87.54265242327978,41.645937642875886],[-87.616235298101,41.64597642618605],[-87.72368309824978,41.68390476286682],[-87.8007959814008,41.77449750297861],[-87.8990711164802,41.97933190536652],[-87.82000620338998,42.01867004536549],[-87.67436403818274,42.02253494642465],[-87.67215519631989,42.02252560302642],[-87.67206430177988,42.02252480498972],[-87.6715580057944,42.02251420333929],[-87.67087624136613,42.022494335674416],[-87.66685502594004,42.02222990600435],[-87.66484613314829,42.02101369964016],[-87.52599004848295,41.71965926793557],[-87.52452737286158,41.70268061103146],[-87.52453198200072,41.70190372673233],[-87.52453837164143,41.70086784610283],[-87.5246502241183,41.69302132794145],[-87.53377212720547,41.65410720748455],[-87.53502866238465,41.649602714331806],[-87.54265242327978,41.645937642875886]]]},"first_import":"2018-08-02T16:26:00.050416Z","fields":[{"type":"integer","name":"Community Area","description":null},{"type":"timestamp","name":"Completion Date","description":null},{"type":"timestamp","name":"Creation Date","description":null},{"type":"float","name":"Latitude","description":null},{"type":"text","name":"Location","description":null},{"type":"float","name":"Longitude","description":null},{"type":"integer","name":"Police District","description":null},{"type":"text","name":"Service Request Number","description":null},{"type":"text","name":"Status","description":null},{"type":"text","name":"Street Address","description":null},{"type":"text","name":"Type of Service Request","description":null},{"type":"integer","name":"Ward","description":null},{"type":"float","name":"X Coordinate","description":null},{"type":"float","name":"Y Coordinate","description":null},{"type":"integer","name":"ZIP Code","description":null}],"description":null,"bbox":{"srid":4326,"coordinates":[[[-87.8990711164802,41.645937642875886],[-87.8990711164802,42.02253494642465],[-87.52452737286158,42.02253494642465],[-87.52452737286158,41.645937642875886],[-87.8990711164802,41.645937642875886]]]},"attribution":"City of Chicago"}]}
+{
+  "meta": {
+    "params": {
+      "page_size": 2,
+      "page": 1,
+      "order_by": {
+        "asc": "name"
+      },
+      "format": "json"
+    },
+    "links": {
+      "previous": null,
+      "next": "https://dev.plenar.io/api/v2/data-sets?format=json&order_by=asc%3Aname&page=2&page_size=2",
+      "current": "https://dev.plenar.io/api/v2/data-sets?format=json&order_by=asc%3Aname&page=1&page_size=2"
+    },
+    "counts": {
+      "total_records": 21,
+      "total_pages": 11,
+      "data_count": 2
+    }
+  },
+  "data": [
+    {
+      "virtual_points": [
+        {
+          "name": "vpf_5DRYegEC_NT_iGjz",
+          "lon_field": "Longitude",
+          "loc_field": null,
+          "lat_field": "Latitude"
+        }
+      ],
+      "virtual_dates": [],
+      "user": {
+        "name": "Vince Forgione",
+        "email": "vforgione@uchicago.edu",
+        "bio": "Lead Engineer with UChicago's Urban CCD"
+      },
+      "time_range": {
+        "upper_inclusive": true,
+        "upper": "2018-09-02T00:00:00",
+        "lower_inclusive": true,
+        "lower": "2001-04-06T00:00:00"
+      },
+      "source_url": "https://data.cityofchicago.org/api/views/3c9v-pnva/rows.csv?accessType=DOWNLOAD",
+      "slug": "chicago-311-service-requests-abandoned-vehicles",
+      "refresh_starts_on": "2018-01-01",
+      "refresh_rate": "days",
+      "refresh_interval": 1,
+      "refresh_ends_on": null,
+      "next_import": "2018-09-04T16:22:00.052382Z",
+      "name": "Chicago 311 Service Requests - Abandoned Vehicles",
+      "latest_import": "2018-09-03T16:23:56.479615Z",
+      "hull": {
+        "srid": 4326,
+        "coordinates": [
+          [
+            [
+              -87.59790105526804,
+              41.64449686770894
+            ],
+            [
+              -87.61687832306058,
+              41.646613538710284
+            ],
+            [
+              -87.73364414382424,
+              41.68362214209755
+            ],
+            [
+              -87.80068018439076,
+              41.77401460088747
+            ],
+            [
+              -87.90988575382057,
+              41.97262643515582
+            ],
+            [
+              -87.91372610600482,
+              42.0085515808592
+            ],
+            [
+              -87.81647347886509,
+              42.018657199281265
+            ],
+            [
+              -87.81394629882729,
+              42.018909937520945
+            ],
+            [
+              -87.67664723812041,
+              42.02266026807753
+            ],
+            [
+              -87.67124453546828,
+              42.02263086215985
+            ],
+            [
+              -87.66591409672404,
+              42.02253964688932
+            ],
+            [
+              -87.66410930179256,
+              42.019394750569774
+            ],
+            [
+              -87.63665142867681,
+              41.963209064832824
+            ],
+            [
+              -87.54070423685593,
+              41.74834162748173
+            ],
+            [
+              -87.52617357053239,
+              41.709478919734515
+            ],
+            [
+              -87.52468278255836,
+              41.70112777354623
+            ],
+            [
+              -87.52471659671593,
+              41.69191185515244
+            ],
+            [
+              -87.52749194531424,
+              41.651701289708825
+            ],
+            [
+              -87.53517194041248,
+              41.64905093200004
+            ],
+            [
+              -87.54327006101778,
+              41.64625799447537
+            ],
+            [
+              -87.55917000812315,
+              41.644729828400294
+            ],
+            [
+              -87.59790105526804,
+              41.64449686770894
+            ]
+          ]
+        ]
+      },
+      "first_import": "2018-08-02T16:22:00.042468Z",
+      "fields": [
+        {
+          "type": "integer",
+          "name": "Community Area",
+          "description": null
+        },
+        {
+          "type": "timestamp",
+          "name": "Completion Date",
+          "description": null
+        },
+        {
+          "type": "timestamp",
+          "name": "Creation Date",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Current Activity",
+          "description": null
+        },
+        {
+          "type": "integer",
+          "name": "How Many Days Has the Vehicle Been Reported as Parked?",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "Latitude",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "License Plate",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Location",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "Longitude",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Most Recent Action",
+          "description": null
+        },
+        {
+          "type": "integer",
+          "name": "Police District",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "SSA",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Service Request Number",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Status",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Street Address",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Type of Service Request",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Vehicle Color",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Vehicle Make/Model",
+          "description": null
+        },
+        {
+          "type": "integer",
+          "name": "Ward",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "X Coordinate",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "Y Coordinate",
+          "description": null
+        },
+        {
+          "type": "integer",
+          "name": "ZIP Code",
+          "description": null
+        }
+      ],
+      "description": null,
+      "bbox": {
+        "srid": 4326,
+        "coordinates": [
+          [
+            [
+              -87.91372610600482,
+              41.64449686770894
+            ],
+            [
+              -87.91372610600482,
+              42.02266026807753
+            ],
+            [
+              -87.52468278255836,
+              42.02266026807753
+            ],
+            [
+              -87.52468278255836,
+              41.64449686770894
+            ],
+            [
+              -87.91372610600482,
+              41.64449686770894
+            ]
+          ]
+        ]
+      },
+      "attribution": "City of Chicago"
+    },
+    {
+      "virtual_points": [
+        {
+          "name": "vpf_oollOpDa3Qe-nBjt",
+          "lon_field": "Longitude",
+          "loc_field": null,
+          "lat_field": "Latitude"
+        }
+      ],
+      "virtual_dates": [],
+      "user": {
+        "name": "Vince Forgione",
+        "email": "vforgione@uchicago.edu",
+        "bio": "Lead Engineer with UChicago's Urban CCD"
+      },
+      "time_range": {
+        "upper_inclusive": true,
+        "upper": "2018-09-03T00:00:00",
+        "lower_inclusive": true,
+        "lower": "1995-01-17T00:00:00"
+      },
+      "source_url": "https://data.cityofchicago.org/api/views/t28b-ys7j/rows.csv?accessType=DOWNLOAD",
+      "slug": "chicago-311-service-requests-alley-lights-out",
+      "refresh_starts_on": "2018-01-01",
+      "refresh_rate": "days",
+      "refresh_interval": 1,
+      "refresh_ends_on": null,
+      "next_import": "2018-09-04T16:26:00.070462Z",
+      "name": "Chicago 311 Service Requests - Alley Lights Out",
+      "latest_import": "2018-09-03T16:28:00.713957Z",
+      "hull": {
+        "srid": 4326,
+        "coordinates": [
+          [
+            [
+              -87.54265242327978,
+              41.645937642875886
+            ],
+            [
+              -87.616235298101,
+              41.64597642618605
+            ],
+            [
+              -87.72368309824978,
+              41.68390476286682
+            ],
+            [
+              -87.8007959814008,
+              41.77449750297861
+            ],
+            [
+              -87.8990711164802,
+              41.97933190536652
+            ],
+            [
+              -87.82000620338998,
+              42.01867004536549
+            ],
+            [
+              -87.67436403818274,
+              42.02253494642465
+            ],
+            [
+              -87.67215519631989,
+              42.02252560302642
+            ],
+            [
+              -87.67206430177988,
+              42.02252480498972
+            ],
+            [
+              -87.6715580057944,
+              42.02251420333929
+            ],
+            [
+              -87.67087624136613,
+              42.022494335674416
+            ],
+            [
+              -87.66685502594004,
+              42.02222990600435
+            ],
+            [
+              -87.66484613314829,
+              42.02101369964016
+            ],
+            [
+              -87.52599004848295,
+              41.71965926793557
+            ],
+            [
+              -87.52452737286158,
+              41.70268061103146
+            ],
+            [
+              -87.52453198200072,
+              41.70190372673233
+            ],
+            [
+              -87.52453837164143,
+              41.70086784610283
+            ],
+            [
+              -87.5246502241183,
+              41.69302132794145
+            ],
+            [
+              -87.53377212720547,
+              41.65410720748455
+            ],
+            [
+              -87.53502866238465,
+              41.649602714331806
+            ],
+            [
+              -87.54265242327978,
+              41.645937642875886
+            ]
+          ]
+        ]
+      },
+      "first_import": "2018-08-02T16:26:00.050416Z",
+      "fields": [
+        {
+          "type": "integer",
+          "name": "Community Area",
+          "description": null
+        },
+        {
+          "type": "timestamp",
+          "name": "Completion Date",
+          "description": null
+        },
+        {
+          "type": "timestamp",
+          "name": "Creation Date",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "Latitude",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Location",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "Longitude",
+          "description": null
+        },
+        {
+          "type": "integer",
+          "name": "Police District",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Service Request Number",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Status",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Street Address",
+          "description": null
+        },
+        {
+          "type": "text",
+          "name": "Type of Service Request",
+          "description": null
+        },
+        {
+          "type": "integer",
+          "name": "Ward",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "X Coordinate",
+          "description": null
+        },
+        {
+          "type": "float",
+          "name": "Y Coordinate",
+          "description": null
+        },
+        {
+          "type": "integer",
+          "name": "ZIP Code",
+          "description": null
+        }
+      ],
+      "description": null,
+      "bbox": {
+        "srid": 4326,
+        "coordinates": [
+          [
+            [
+              -87.8990711164802,
+              41.645937642875886
+            ],
+            [
+              -87.8990711164802,
+              42.02253494642465
+            ],
+            [
+              -87.52452737286158,
+              42.02253494642465
+            ],
+            [
+              -87.52452737286158,
+              41.645937642875886
+            ],
+            [
+              -87.8990711164802,
+              41.645937642875886
+            ]
+          ]
+        ]
+      },
+      "attribution": "City of Chicago"
+    }
+  ]
+}
