@@ -10,8 +10,8 @@ class BaseClient {
     this.basePath = `${this.scheme}://${this.hostname}/api/${this.version}/${this.endpoint}`;
   }
 
-  async sendRequest() {
-    return fetch(this.basePath, {
+  async sendRequest(url) {
+    return fetch(url, {
       headers: {
         'User-Agent': 'plenario-js-client'
       }
@@ -46,8 +46,55 @@ export class Client extends BaseClient {
   }
 
   async describeDataSets() {
-    return this.sendRequest();
+    return this.sendRequest(this.basePath);
   }
+
+  async headDataSetDescriptions() {
+    let url = `${this.basePath}/@head`;
+    return this.sendRequest(url);
+  }
+
+  async getDataSet(slug) {
+    let url = `${this.basePath}/${slug}`;
+    return this.sendRequest(url);
+  }
+
+  async describeDataSet(slug) {
+    let url = `${this.basePath}/${slug}/@describe`;
+    return this.sendRequest(url);
+  }
+
+  async headDataSet(slug) {
+    let url = `${this.basePath}/${slug}/@head`;
+    return this.sendRequest(url);
+  }
+
+
 }
 
+export class AotClient extends BaseClient {
 
+  constructor({scheme = 'https', hostname = 'plenar.io', version = 'v2', endpoint = 'aot'} = {}) {
+    super();
+    this.scheme = scheme;
+    this.hostname = hostname;
+    this.version = version;
+    this.endpoint = endpoint;
+    this.basePath = `${this.scheme}://${this.hostname}/api/${this.version}/${this.endpoint}`;
+  }
+
+  async getObservations() {
+    return this.sendRequest(url);
+  }
+
+  async describeNetworks() {
+    let url = `${this.basePath}/@describe`;
+    return this.sendRequest(url);
+  }
+
+  async headObservations() {
+    let url = `${this.basePath}/@head`;
+    return this.sendRequest(url);
+  }
+
+}
